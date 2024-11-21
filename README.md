@@ -7,7 +7,7 @@ This plugin requires Craft CMS 4.0.0 or later.
 
 ## Install
 
-- Install with Composer via: ``composer require onstuimig/cookiebot``
+- Install with Composer via: ``composer require onstuimig/craft-cookiebot``
 - Navigate to `Settings -> Plugins` and click the "Install" button
 
 ## Configure
