@@ -1,53 +1,54 @@
 {
-  "name": "balazscsaba2006/cookiebot",
-  "description": "CookieBot integration into Craft CMS 3.",
-  "type": "craft-plugin",
-  "keywords": [
-    "craft",
-    "cms",
-    "craftcms",
-    "craft-plugin",
-    "cookiebot",
-    "cookie bot",
-    "gdpr"
-  ],
-  "support": {
-    "email": "csaba.balazs@humandirect.eu",
-    "issues": "https://github.com/balazscsaba2006/craft3-cookiebot/issues?state=open",
-    "source": "https://github.com/balazscsaba2006/craft3-cookiebot",
-    "docs": "https://github.com/balazscsaba2006/craft3-cookiebot"
-  },
-  "license": "proprietary",
-  "authors": [
-    {
-      "name": "Human Direct",
-      "homepage": "https://humandirect.eu"
+	"name": "onstuimig/cookiebot",
+	"description": "CookieBot integration into Craft CMS",
+	"version": "3.0.0",
+	"type": "craft-plugin",
+	"keywords": [
+		"craft",
+		"cms",
+		"craftcms",
+		"craft-plugin",
+		"cookiebot",
+		"cookie bot",
+		"gdpr"
+	],
+	"support": {
+		"issues": "https://github.com/onstuimig/craft-cookiebot/issues?state=open",
+		"source": "https://github.com/onstuimig/craft-cookiebot",
+		"docs": "https://github.com/onstuimig/craft-cookiebot"
+	},
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Onstuimig",
+			"homepage": "https://onstuimig.nl"
+		},
+		{
+			"name": "Human Direct",
+			"homepage": "https://humandirect.eu"
+		}
+	],
+	"require": {
+		"craftcms/cms": "^4.0.0|^5.0.0",
+		"php": "^8.0.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"onstuimig\\cookiebot\\": "src/"
+		}
+	},
+	"extra": {
+		"name": "Cookiebot",
+		"handle": "cookiebot",
+		"hasCpSettings": true,
+		"hasCpSection": false,
+		"changelogUrl": "https://raw.githubusercontent.com/onstuimig/craft-cookiebot/refs/heads/master/CHANGELOG.md",
+		"class": "onstuimig\\cookiebot\\Cookiebot",
+		"components": {
+			"services": "onstuimig\\cookiebot\\services\\CookiebotService"
+		}
+	},
+	"scripts": {
+        "phpstan": "phpstan --memory-limit=1G"
     }
-  ],
-  "require": {
-    "php": ">=8.0",
-    "craftcms/cms": "^4.0.0"
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://asset-packagist.org"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "humandirect\\cookiebot\\": "src/"
-    }
-  },
-  "extra": {
-    "name": "Cookiebot",
-    "handle": "cookiebot",
-    "hasCpSettings": true,
-    "hasCpSection": false,
-    "changelogUrl": "https://raw.githubusercontent.com/balazscsaba2006/craft3-cookiebot/master/CHANGELOG.md",
-    "class": "humandirect\\cookiebot\\Cookiebot",
-    "components": {
-      "services": "humandirect\\cookiebot\\services\\CookiebotService"
-    }
-  }
 }
