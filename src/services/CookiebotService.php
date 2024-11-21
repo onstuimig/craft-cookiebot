@@ -1,12 +1,12 @@
 <?php
 
-namespace humandirect\cookiebot\services;
+namespace onstuimig\cookiebot\services;
 
 use craft\base\Component;
 use craft\web\View;
 
-use humandirect\cookiebot\Cookiebot;
-use humandirect\cookiebot\models\Settings;
+use onstuimig\cookiebot\Cookiebot;
+use onstuimig\cookiebot\models\Settings;
 
 /**
  * Class CookiebotService
@@ -208,6 +208,8 @@ class CookiebotService extends Component
         $vars['domainGroupID'] = $settings->domainGroupID;
         $vars['culture'] = $culture;
         $vars['autoBlockingMode'] = $settings->autoBlockingMode;
+        $vars['disableConsentModeDefaults'] = $settings->disableConsentModeDefaults;
+        $vars['CDNtld'] = $settings->europeanCDN ? 'eu' : 'com';
 
         $oldMode = \Craft::$app->view->getTemplateMode();
         \Craft::$app->view->setTemplateMode(View::TEMPLATE_MODE_CP);

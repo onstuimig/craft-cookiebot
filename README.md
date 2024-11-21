@@ -1,13 +1,13 @@
-# CookieBot for Craft3 and Craft4
+# CookieBot for Craft CMS
 
-CookieBot integration into Craft CMS 3 or 4.
+CookieBot integration into Craft CMS
 
 ## Requirements
-This plugin requires Craft CMS 3.0.0 or later.
+This plugin requires Craft CMS 4.0.0 or later.
 
 ## Install
 
-- Install with Composer via: ``composer require balazscsaba2006/cookiebot``
+- Install with Composer via: ``composer require onstuimig/cookiebot``
 - Navigate to `Settings -> Plugins` and click the "Install" button
 
 ## Configure
@@ -28,7 +28,10 @@ Here’s what that config file might look like along with a list of all of the p
         'domainGroupID' => 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
         'defaultPreferences' => true,
         'defaultStatistics' => true,
-        'defaultMarketing' => false
+        'defaultMarketing' => false,
+        'autoBlockingMode' => false,
+        'disableConsentModeDefaults' => false,
+        'europeanCDN' => false
     ];
 ```
  

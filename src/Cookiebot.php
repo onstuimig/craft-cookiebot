@@ -1,14 +1,14 @@
 <?php
 
-namespace humandirect\cookiebot;
+namespace onstuimig\cookiebot;
 
 use craft\base\Model;
 use craft\base\Plugin;
 use craft\web\twig\variables\CraftVariable;
 
-use humandirect\cookiebot\models\Settings;
-use humandirect\cookiebot\services\CookiebotService;
-use humandirect\cookiebot\variables\CookiebotVariable;
+use onstuimig\cookiebot\models\Settings;
+use onstuimig\cookiebot\services\CookiebotService;
+use onstuimig\cookiebot\variables\CookiebotVariable;
 
 use yii\base\Event;
 use yii\base\InvalidConfigException;

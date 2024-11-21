@@ -1,8 +1,8 @@
 <?php
 
-namespace humandirect\cookiebot\variables;
+namespace onstuimig\cookiebot\variables;
 
-use humandirect\cookiebot\Cookiebot as Plugin;
+use onstuimig\cookiebot\Cookiebot as Plugin;
 
 /**
  * CookiebotVariable class

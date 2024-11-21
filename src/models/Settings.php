@@ -1,6 +1,6 @@
 <?php
 
-namespace humandirect\cookiebot\models;
+namespace onstuimig\cookiebot\models;
 
 use craft\base\Model;
 
@@ -17,6 +17,8 @@ class Settings extends Model
     public bool $defaultStatistics = false;
     public bool $defaultMarketing = false;
     public bool $autoBlockingMode = false;
+    public bool $disableConsentModeDefaults = false;
+    public bool $europeanCDN = false;
 
     /**
      * @inheritdoc
@@ -25,7 +27,7 @@ class Settings extends Model
     {
         return [
             ['domainGroupID', 'string'],
-            ['domainGroupID', 'default', 'value' => null],
+            ['domainGroupID', 'default', 'value' => ''],
             ['defaultPreferences', 'boolean'],
             ['defaultPreferences', 'default', 'value' => false],
             ['defaultStatistics', 'boolean'],
@@ -34,6 +36,10 @@ class Settings extends Model
             ['defaultMarketing', 'default', 'value' => false],
             ['autoBlockingMode', 'boolean'],
             ['autoBlockingMode', 'default', 'value' => false],
+            ['disableConsentModeDefaults', 'boolean'],
+            ['disableConsentModeDefaults', 'default', 'value' => false],
+            ['europeanCDN', 'boolean'],
+            ['europeanCDN', 'default', 'value' => false],
         ];
     }
 }
