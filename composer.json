@@ -1,7 +1,7 @@
 {
 	"name": "onstuimig/craft-cookiebot",
 	"description": "CookieBot integration into Craft CMS",
-	"version": "3.0.0",
+	"version": "3.1.0",
 	"type": "craft-plugin",
 	"keywords": [
 		"craft",

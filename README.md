@@ -31,7 +31,8 @@ Here’s what that config file might look like along with a list of all of the p
         'defaultMarketing' => false,
         'autoBlockingMode' => false,
         'disableConsentModeDefaults' => false,
-        'europeanCDN' => false
+        'europeanCDN' => false,
+		'framework' => 'TCFv2.2'
     ];
 ```
  

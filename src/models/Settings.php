@@ -19,6 +19,7 @@ class Settings extends Model
     public bool $autoBlockingMode = false;
     public bool $disableConsentModeDefaults = false;
     public bool $europeanCDN = false;
+	public string $framework = '';
 
     /**
      * @inheritdoc
@@ -40,6 +41,8 @@ class Settings extends Model
             ['disableConsentModeDefaults', 'default', 'value' => false],
             ['europeanCDN', 'boolean'],
             ['europeanCDN', 'default', 'value' => false],
+			['framework', 'string'],
+            ['framework', 'default', 'value' => ''],
         ];
     }
 }

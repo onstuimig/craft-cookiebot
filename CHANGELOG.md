@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0 - 2026-03-02
+### Added
+- Option to set framework attribute to support communication with other consent frameworks, e.g. "TCFv2.2"
+
 ## 3.0.0 - 2024-11-21
 ### Added
 - Craft 5 support

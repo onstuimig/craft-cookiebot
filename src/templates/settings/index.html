@@ -32,6 +32,17 @@
     errors: settings.getErrors('autoBlockingMode')
 }) }}
 
+{{ forms.textField({
+    label: "Framework"|t,
+    id: 'framework',
+    name: 'framework',
+    instructions: 'Enables Cookiebot to signal consent to other consent frameworks implemented on a website, e.g. "TCFv2.2"'|t,
+    value: settings.framework,
+    disabled: 'framework' in overrides,
+    warning: 'framework' in overrides ? configWarning('framework'),
+    errors: settings.getErrors('framework')
+}) }}
+
 {{ forms.lightswitchField({
     label: "Disable Consent Mode Defaults"|t,
     on: settings.disableConsentModeDefaults,
